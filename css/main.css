@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+/*********************/
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+.main  {
+    flex-grow: 1;
+}
+
+.side-panel-toggle{
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+
+    color: #fff;
+    background: rgb(101, 154, 235);
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.side-panel-toggle:hover{
+    background: rgb(72, 140, 243);;
+}
+
+.sp-icon-close{
+    display: none !important;
+}
+
+.side-panel{
+    display: none;
+    width: 200px;
+    flex-shrink: 0;
+    padding: 20px;
+    color: #fff;
+    background: rgb(101, 154, 235);
+    box-shadow: 0 0 10px rgb(0,0,0,0.35);
+}
+
+.side-panel-open .side-panel{
+    display: initial;
+}
+
+.side-panel-open .side-panel-open {
+    display: none !important;
+}
+
+.side-panel-open .side-panel-close {
+    display: initial !important;
+}
+
+
+
+
+/***********************************/
+.fondo{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.maps{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 0;
+    ;
+}
+
+
+
+
+
+
+
+
+
+/***********************************/
+footer {
+    margin-top: auto;
+    background-color: rgb(27, 17, 17);
+    color: rgb(247, 242, 242);
+    padding: 0px;
+    padding-bottom: 0;
+  }
+
+  .icons div {
+    margin: 0.3rem 150px;
+    color: #d1f0e5; 
+  }
+
+  .icons {
+    padding-top: 2rem;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+  
+  }
