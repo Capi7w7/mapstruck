@@ -12,7 +12,7 @@
     <div class="wrapper side-panel-open">
         <div class="main">
             <div class="fondo">
-                <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3332.292076222664!2d-70.68076012368772!3d-33.36343997342415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c7025c925e0f%3A0x7f2f6a657c08d14a!2sDuoc%20UC%3A%20Sede%20Plaza%20Norte!5e0!3m2!1ses!2scl!4v1719271520047!5m2!1ses!2scl"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3332.292076222664!2d-70.68076012368772!3d-33.36343997342415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c7025c925e0f%3A0x7f2f6a657c08d14a!2sDuoc%20UC%3A%20Sede%20Plaza%20Norte!5e0!3m2!1ses!2scl!4v1719271520047!5m2!1ses!2scl"  allowfullscreen="..." loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
         <button class="side-panel-toggle" type="button">
@@ -63,19 +63,44 @@
             </div>
         </div>
     </div>
-
+     
     <footer >
         <div class="container">
             <div class="container">
             <div class="icons">
-                <div>
-                    <i class="fa-solid fa-user fa-2x"></i>
+                <div class="container ">
+                    <button class="btn btn-primary mt-0" onclick="togglePanel('slidePanel1')">
+                        <i class="fa-solid fa-user fa-2x"></i>
+                    </button>
+                    <div id="slidePanel1" class="slide-panel bottom">
+                        <div class="content-panel p-3">
+                            <a href="#"><i class="fa-solid fa-user"></i> Perfil</a>
+                            <a href="#"><i class="fa-solid fa-comments"></i> Chat</a>
+                            <a href="#"><i class="fa-solid fa-wallet"></i> Billetera</a>
+                            <a href="#"><i class="fa-solid fa-history"></i> Historial</a>
+                            <button class="btn btn-secondary" onclick="togglePanel('slidePanel1')">Cerrar</button>
+                        </div>
+                    </div>
                 </div>
-               <div>
-                    <i class="fa-solid fa-house fa-2x"></i>
-               </div>
-                <div>
-                    <i class="fa-solid fa-arrows-rotate fa-2x"></i>
+                
+                <div class="container">
+                    <button class="btn btn-primary mt-0" onclick="togglePanel('slidePanel2')">
+                        <i class="fa-solid fa-house fa-2x"></i> 
+                    </button>
+                    <div id="slidePanel2" class="slide-panel center">
+                        <div class="content-panel p-3">
+                            <a href="#"><i class="fa-solid fa-cog"></i> Configuraciones</a>
+                            <a href="#"><i class="fa-solid fa-question-circle"></i> Ayuda</a>
+                            <a href="#"><i class="fa-solid fa-exclamation-circle"></i> Reclamos</a>
+                            <a href="/login.html"><i class="fa-solid fa-sign-out-alt"></i> Cerrar sesión</a>
+                            <button class="btn btn-secondary" onclick="togglePanel('slidePanel2')">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <button type="reset" class="btn btn-dark" onclick="refreshPage()">
+                        <i class="fa-solid fa-arrows-rotate fa-2x"></i>
+                    </button>  
                 </div>
             </div>
             </div>
